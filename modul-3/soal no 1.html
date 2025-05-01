@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Portofolio</title>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-blue-900 sticky top-0 z-50 shadow-md">
+    <nav class="container mx-auto py-4 px-6 flex justify-between">
+      <a href="#" class="text-3xl font-bold text-white">Portofolio</a>
+      <ul class="flex space-x-6 text-gray-100">
+        <li class="hover:text-blue-300 transition"><a href="#home">Home</a></li>
+        <li class="hover:text-blue-300 transition"><a href="#about">About</a></li>
+        <li class="hover:text-blue-300 transition"><a href="#education">Education</a></li>
+        <li class="hover:text-blue-300 transition"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('wallpaper aesthetic-anime.jpg');">
+    <div class="bg-blue-900 bg-opacity-60 p-8 rounded-lg text-white">
+      <h1 class="text-5xl font-bold mb-4">Halo, Saya Fika.</h1>
+      <p class="text-xl">Seorang mahasiswa yang saat ini masih menempuh ilmu di Universitas Turnojoyo Madura</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="px-6 py-16 flex flex-col md:flex-row items-center gap-10 bg-gray-100">
+    <div class="md:w-1/2">
+      <img src="foto.jpeg" alt="" class="w-80 h-80 mx-auto rounded-full border-4 border-blue-600 object-cover" />
+    </div>
+    <div class="w-full md:w-1/2">
+      <h2 class="text-4xl font-bold text-blue-900 mb-4">Tentang Saya</h2>
+      <p class="text-lg text-gray-800 mb-4">
+        Halo! Perkenalkan, nama saya adalah <strong>Fika Anjani</strong>. Saya adalah seorang mahasiswa yang saat ini sedang menempuh pendidikan di 
+        <strong>Universitas Trunojoyo Madura</strong>. Saya berasal dari jurusan <strong>Sistem Informasi</strong> dan saat ini berada di <strong>semester 2</strong>.
+      </p>
+      <p class="text-lg text-gray-800 mb-4">
+        Ketertarikan saya pada dunia teknologi informasi, pemrograman, dan pengembangan web mendorong saya untuk terus belajar dan mengembangkan keterampilan saya di bidang ini. 
+          Website ini saya buat sebagai bagian dari tugas kuliah sekaligus sebagai bentuk kontribusi dalam menyebarkan informasi dan berita seputar kegiatan kampus.
+      </p>
+      <p class="text-lg text-gray-800">
+        Saya percaya bahwa teknologi dapat menjadi jembatan yang kuat untuk menyebarkan pengetahuan dan memperkuat koneksi antar civitas akademika. 
+        Terima kasih telah mengunjungi situs ini!
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="project" class="px-6 py-16 text-center bg-white">
+    <h2 class="text-4xl font-bold text-blue-900 mb-10">Proyek Saya</h2>
+    <div class="text-left max-w-3xl mx-auto text-gray-800 space-y-6">
+      <div>
+        <h3 class="text-xl font-semibold">Website Company Profile </h3>
+        <p>Website informatif untuk memperkenalkan profil pribadi. Dibangun menggunakan HTML, CSS, dan tailwind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="px-6 py-16 bg-blue-50 text-center">
+    <h2 class="text-4xl font-bold text-blue-900 mb-6">Pendidikan</h2>
+    <p class="text-lg text-gray-800">MI Sunan Ampel Rejoso Pasuruan  (2012 - 2018)</p>
+    <p class="text-lg text-gray-800">SMP Masyithoh Ngoro Mojokerto (2018 - 2021)</p>
+    <p class="text-lg text-gray-800">Ilmu Pengetahuan Alam – MA Putri Al-Ishlahiyyah (2021 - 2024)</p>
+    <p class="text-lg text-gray-800">S1 Sistem Informasi – Universitas Trunojoyo Madura (2024 - Sekarang)</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-6 py-16 bg-white text-center">
+    <h2 class="text-4xl font-bold text-blue-900 mb-6">Kontak Saya</h2>
+    <p class="text-lg text-gray-800 mb-6">Tertarik ingin ngobrol santai? Silakan kirim pesan atau hubungi saya melalui:</p>
+
+    <p class="text-gray-800 mb-2">Email anjanifika232@email.com</p>
+    <p class="text-gray-800 mb-2">Instagram <a href="https://instagram.com/njan_xixi" class="text-blue-700 hover:underline">@njan_xixi</a></p>
+    <p class="text-gray-800 mb-6">Youtube <a href="https://youtube.com/@fikaanjani-c4n?si=_PimCmGw_RkiWqoN" class="text-blue-700 hover:underline">@fikaanjani</a></p>
+
+    <form class="max-w-xl mx-auto bg-blue-50 p-8 rounded-lg shadow-lg space-y-4">
+      <input type="text" placeholder="Nama Anda" class="w-full p-3 rounded bg-white text-gray-800 placeholder-gray-500 border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" placeholder="Email Anda" class="w-full p-3 rounded bg-white text-gray-800 placeholder-gray-500 border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <textarea rows="5" placeholder="Pesan Anda" class="w-full p-3 rounded bg-white text-gray-800 placeholder-gray-500 border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 rounded transition">Kirim Pesan</button>
+    </form>
+  </section>
+
+</body>
+</html>

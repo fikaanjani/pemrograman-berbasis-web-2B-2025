@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign Up - ByteAcademy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+  <div class="min-h-screen grid grid-cols-1 md:grid-cols-2">
+    <!-- Kiri: Ilustrasi -->
+    <div class="bg-purple-700 flex items-center justify-center p-8">
+      <img src="Gambar 5.png" alt="" class="w-3/4 max-w-md">
+    </div>
+
+    <!-- Kanan: Form -->
+    <div class="flex items-center justify-center px-6 py-12 bg-white text-gray-900">
+      <div class="w-full max-w-md space-y-6">
+        <div class="text-center mb-6">
+          <img src="logo.png" alt="ByteAcademy" class="mx-auto h-10 mb-2">
+          <h2 class="text-2xl font-bold">Mulai Hari Ini</h2>
+          <p class="text-sm text-gray-500">Menjadi lebih baik tiap hari! Kamu takkan pernah menyesal.</p>
+        </div>
+
+        <form id="myForm" onsubmit="return validateForm()" class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium">Alamat Email</label>
+            <input type="email" id="email" placeholder="Masukkan Email Anda" class="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+          </div>
+
+          <div>
+            <label for="name" class="block text-sm font-medium">Nama Lengkap</label>
+            <input type="text" id="name" placeholder="Masukkan Nama Lengkap Anda" class="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+          </div>
+
+          <div>
+            <label for="password" class="block text-sm font-medium">Password</label>
+            <input type="password" id="password" placeholder="Masukkan Password Anda" class="mt-1 w-full px-4 py-3 rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-purple-600">
+          </div>
+
+          <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-lg transition">Sign Up</button>
+
+          <div class="flex items-center justify-center mt-4">
+             <hr class="flex-grow border-gray-300">
+            <span class="mx-4 text-sm text-gray-400">atau</span>
+            <hr class="flex-grow border-gray-300">
+          </div>
+
+          <button type="button" class="w-full flex items-center justify-center border border-gray-300 bg-white dark:bg-gray-900 text-gray-700 font-medium py-3 px-4 rounded-lg hover:bg-gray-100 transition">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="h-5 w-5 mr-2" alt="Google">
+            Sign up with Google
+          </button>
+        </form>
+
+        <script>
+          function validateForm() {
+            const email = document.getElementById("email").value;
+            const name = document.getElementById("name").value;
+            const password = document.getElementById("password").value;
+        
+            if (email === "") {
+              alert("Email harus diisi!");
+              return false;
+            }
+        
+            if (name === "") {
+              alert("Nama harus diisi!");
+              return false;
+            }
+        
+            if (password === "") {
+              alert("Password harus diisi!");
+              return false;
+            }
+        
+            // Validasi email sederhana
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+              alert("Format email tidak valid!");
+              return false;
+            }
+        
+            return true; // semua validasi lolos
+          }
+        </script>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
